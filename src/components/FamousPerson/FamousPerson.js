@@ -6,8 +6,7 @@ class FamousPerson extends Component {
         super();
         this.state = {
             name: 'Christopher Guest',
-            role: 'The Six Fingered Man',
-            famousRoles: []
+            role: 'The Six Fingered Man'
         };
 
     }
@@ -38,9 +37,6 @@ class FamousPerson extends Component {
                         type="text" placeholder="Famous Role" />
                 <p>{this.state.name} is famous for the role of {this.state.role}</p>
                 <button onClick={this.handleSubmit} >Submit</button>
-                <ul id="famous-list">
-
-                </ul>
             </div>
         )
     }
