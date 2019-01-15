@@ -1,17 +1,26 @@
-// import React, {Component} from 'react';
+import React, {Component} from 'react';
 
 
-// class FamousPerson extends Component {
-//     constructor() {
+class FamousPerson extends Component {
+    constructor() {
+        super();
+        this.state = {
+            name: 'Christopher Guest',
+            role: 'The Six Fingered Man'
+        };
 
-//     }
-//     render(){
-//         return(
-//             <div className='header'>
-//                 <h2>App Name!</h2>
-//             </div>
-//         )
-//     }
-// }
+    }
+    render(){
+        return(
+            <div>
+                <input onChange={this.handleChangeName}
+                        type="text" placeholder="Famous Person" />
+                <input onChange={this.handleChangeRole}
+                        type="text" placeholder="Famous Role" />
+                <p>{this.state.name} is famous for the role of {this.state.role}</p>
+            </div>
+        )
+    }
+}
 
-// export default FamousPerson;
+export default FamousPerson;
