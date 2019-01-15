@@ -10,6 +10,20 @@ class FamousPerson extends Component {
         };
 
     }
+
+    handleChangeName = (event) => {
+        this.setState({
+            name: event.target.value
+        })
+    }
+
+    handleChangeRole = (event) => {
+        this.setState({
+            role: event.target.value
+        })
+    }
+
+
     render(){
         return(
             <div>
